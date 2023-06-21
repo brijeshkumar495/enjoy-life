@@ -1,31 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+  <title>Registration and Login Form</title>
+  <!-- <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .container {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+    }
+    
+    .container h2 {
+      text-align: center;
+    }
+    
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    .container button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .container button:hover {
+      background-color: #45a049;
+    }
+    
+    .container .separator {
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    .container .separator::before,
+    .container .separator::after {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 40%;
+      background-color: #ccc;
+    }
+    
+    .container .separator::before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    
+    .container .separator::after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+  </style>  -->
+<link rel="stylesheet" href="login.css">
 </head>
-<!-- <script src="https://kit/.fontawesome.com/b33802d48d.js" crossorigin="anonymous"></script> -->
-
 <body>
-    <div class="container">
-        <div class="div-container">
-    <h1>Login to Brijesh</h1>
-    <form>
-        <input type="email" name="Email" placeholder="Enter Email"/><br/>
-        <input type="passward" name="Passward" placeholder="Passward"/><br/>
-        <button type="submit">Login</button>
-
+  <div class="container">
+    <h2>Registration</h2>
+    <form action="">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username">
+      <!-- <label for="phon number">Phon Number</label>
+      <input type="text" id="phon number" name="phon number" placeholder="Enter your phon number">
+      
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email"> -->
+      <label for="email_or_phone">email_or_phone</label>
+      <input type="text" name="email_or_phone" placeholder="Email or Phone Number" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+      
+      <button type="submit">Register</button>
+      
+      <div class="separator">Or</div>
+      
+      <h2>Login</h2>
+      <label for="login-username">Username</label>
+      <input type="text" id="login-username" name="login-username" placeholder="Enter your username">
+      
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" name="login-password" placeholder="Enter your password">
+      
+      <button type="submit">Login</button>
     </form>
-    <!-- <div class="Box" ></div> -->
-    <!-- <div class="Box" > 
-    <input type="email" name="email" id="email" placeholder="enter your email" >
-
-        <input type="password" name="password" id="password" placeholder="enter your password">   </div>
-    <button class="btn"> sign in</button> -->
-</div>
-</div>
+  </div>
 </body>
-</html>     
+</html>
